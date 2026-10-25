@@ -1,0 +1,14 @@
+layout {
+    pane stacked=true {
+        pane name="vim" command="vim" {
+            args "workshop/slides.md"
+        }
+        pane name="slides" command="/Users/emmaguo/.local/bin/mise" expanded=true focus=true {
+            args "exec" "--" "presenterm" "--theme" "terminal-dark" "workshop/slides.md"
+        }
+        pane name="shell"
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+}

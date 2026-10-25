@@ -1,0 +1,10 @@
+[tools]
+"github:mfontanini/presenterm" = "0.16.1"
+
+[tasks."workshop:preview"]
+description = "Preview the rabbitholeathon slides with hot reload"
+run = "presenterm --theme terminal-dark workshop/slides.md"
+
+[tasks."workshop:present"]
+description = "Present the rabbitholeathon slides and check that they fit"
+run = "presenterm --theme terminal-dark --present --validate-overflows workshop/slides.md"
